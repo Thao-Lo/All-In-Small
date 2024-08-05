@@ -18,7 +18,7 @@
           <span class="nav-link-text ms-1">Dashboard</span>
         </a>
       </li>
-      <li class="nav-item  sidebar-item ">
+      <li class="nav-item  sidebar-item  ">
         <a class="nav-link" href="/admin/staff-directory">
           <i class="fa-solid fa-users"></i>
           <span class="nav-link-text ms-1">Staff Directory</span>
@@ -35,6 +35,12 @@
           <i class="fa-solid fa-bowl-food"></i>
           <span class="nav-link-text ms-1">Product</span>
         </a>
+      </li>
+      <li class="nav-item  sidebar-item ms-3">
+        <a class="nav-link" href="/admin/add-on-management">
+          <i class="fa-solid fa-file-circle-plus"></i>
+          <span class="nav-link-text ms-1">Add On Items</span>
+        </a>        
       </li>
       <li class="nav-item  sidebar-item">
         <a class="nav-link" href="/admin/order-management">

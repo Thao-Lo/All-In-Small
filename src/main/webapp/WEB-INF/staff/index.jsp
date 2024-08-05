@@ -1032,9 +1032,8 @@
                                 <div class="col-12 ps-4 fst-italic mb-1"> - Add On: </div>
                                 <div class="col-12 ps-4 fst-italic mb-2"> - Note: </div>
                                 <div class="col-12 d-flex justify-content-end">
-                                    <div class="row d-flex align-items-center">
-                                        <div class="col-4"></div>
-                                        <div class="col-6 d-flex align-items-center pe-2">
+                                    <div class="row d-flex align-items-center">                                       
+                                        <div class="col-7 d-flex align-items-center pe-2">
                                             <div class="product-quantity d-flex gap-1">
                                                 <input type="button" value="-" class="button-minus btn w-30 rounded-2"
                                                     data-field="quantity">
@@ -1045,6 +1044,9 @@
                                             </div>
                                         </div>
                                         <div class="col-2 text-center fw-medium">$30</div>
+                                        <div class="col-3">                                           
+                                            <a href="" class="text-danger">Delete</a>                                               
+                                    </div>
                                     </div>
                                 </div>
                             </div>
@@ -1055,9 +1057,8 @@
                                 <div class="col-12 fs-5 fw-semibold"> Go Bucket® 2 Wicked Wings®</div>
                                 <div class="col-12 ps-4 fst-italic mb-2"> - Note: </div>
                                 <div class="col-12 d-flex justify-content-end">
-                                    <div class="row d-flex align-items-center">
-                                        <div class="col-4"></div>
-                                        <div class="col-6 d-flex align-items-center pe-2">
+                                    <div class="row d-flex align-items-center">                                       
+                                        <div class="col-7 d-flex align-items-center pe-2">
                                             <div class="product-quantity d-flex gap-1">
                                                 <input type="button" value="-" class="button-minus btn w-30 rounded-2"
                                                     data-field="quantity">
@@ -1068,6 +1069,9 @@
                                             </div>
                                         </div>
                                         <div class="col-2 text-center fw-medium">$37</div>
+                                        <div class="col-3">                                           
+                                            <a href="" class="text-danger">Delete</a>                                               
+                                    </div>
                                     </div>
                                 </div>
                             </div>

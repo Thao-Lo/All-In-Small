@@ -7,7 +7,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product List</title>
+  <title>Add On List</title>
   <!-- google font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,9 +34,8 @@
 </head>
 
 <body class="container-fluid">
-  <!-- seperate sidebar-nav to other jsp file -->
-   <jsp:include page="sidebar-nav.jsp"/>
-
+  	 <!-- seperate sidebar-nav to other jsp file -->
+     <jsp:include page="sidebar-nav.jsp"/>
 
   <main class="page-content position-relative max-height-vh-100 h-100 border-radius-lg">
     <!-- START main nav -->
@@ -46,7 +45,8 @@
           <div style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="/admin/dashboard">Home</a></li>
-              <li class="breadcrumb-item " aria-current="page">Product</li>
+              <li class="breadcrumb-item"><a href="/admin/product-management">Product</a></li>
+              <li class="breadcrumb-item " aria-current="page">Add-On</li>
             </ol>
           </div>
           <div class="d-none d-md-block text-2xl font-weight-bold">All-In Small</div>
@@ -57,7 +57,7 @@
         </div>
         <div class="d-flex justify-content-between align-items-center mt-3">
           <h6 class="font-weight-bolder mb-0">Dashboard</h6>
-          <a href="/admin/product-edit" class="btn dashboard-button custom-shadow rounded align-self-start me-3">+ Add New Product</a>
+          <a href="/admin/add-on-edit" class="btn dashboard-button custom-shadow rounded align-self-start me-3">+ Add New Add-On</a>
         </div>
       </nav>
 
@@ -71,7 +71,7 @@
           <div class="card position-relative my-4">
             <div class="card-header p-0  mx-4 z-2">
               <div class="bg-gradient-custom-primary custom-shadow rounded pt-4 pb-3">
-                <h6 class="text-white text-capitalize ps-3">Product List</h6>
+                <h6 class="text-white text-capitalize ps-3">Add-On List</h6>
               </div>
             </div>
             <div class="card-body px-0 pb-2">
@@ -80,9 +80,8 @@
                   <thead>
                     <tr>
                       <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Id</th>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Product Name</th>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Add-on Items</th>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Image</th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Add-On Name</th>                     
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Price</th>
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Category</th>
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Created By</th>
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Created On</th>
@@ -100,20 +99,11 @@
                       </td>
                       <td style="min-width:10rem; max-width: 12rem">
                         <div class="align-middle text-start text-sm">     
-                            <h6 class="mb-0 text-sm text-wrap">Smoky Chicken & Bacon</h6>
+                            <h6 class="mb-0 text-sm text-wrap">Extra chicken</h6>
                         </div>
-                      </td>
-                      <td style="min-width:10rem; max-width: 12rem">
-                        <div class="align-middle text-start text-sm">     
-                          <p class="text-xs font-weight-bold mb-1">Extra Vegetable</p>  
-                          <p class="text-xs font-weight-bold mb-1">Extra Chicken</p>  
-                          <p class="text-xs font-weight-bold mb-1">Extra Cheese</p>  
-                        </div>
-                      </td>
-                      <td>
-                        <div>
-                          <img src="../assets/img/banhcanh.jpg" class="avatar avatar-xl me-3 border-radius-lg" alt="user1">
-                        </div>                     
+                      </td>                     
+                      <td class="align-middle text-center">
+                        <p class="text-xs font-weight-bold mb-0">$4</p>  
                       </td>
                       <td class="align-middle text-center">
                         <p class="text-xs font-weight-bold mb-0">Food</p>  
@@ -131,7 +121,7 @@
                         <span class="text-secondary text-xs font-weight-bold">23/04/18</span>
                       </td>
                       <td class="align-middle">
-                        <a href="/admin/product-edit" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
+                        <a href="/admin/add-on-edit" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
                           Edit
                         </a>
 
@@ -172,21 +162,12 @@
                       </td>
                       <td style="min-width:10rem; max-width: 12rem">
                         <div class="align-middle text-start text-sm">     
-                            <h6 class="mb-0 text-sm text-wrap">Hot Honey Pepperoni Lovers Thin & Crispy</h6>
+                            <h6 class="mb-0 text-sm text-wrap">Extra vegetable</h6>
                         </div>
-                      </td>
-                      <td style="min-width:10rem; max-width: 12rem">
-                        <div class="align-middle text-start text-sm">     
-                          <p class="text-xs font-weight-bold mb-1">Extra Vegetable</p>  
-                          <p class="text-xs font-weight-bold mb-1">Extra Chicken</p>  
-                          <p class="text-xs font-weight-bold mb-1">Extra Cheese</p>  
-                        </div>
-                      </td>
-                      <td>
-                        <div>
-                          <img src="../assets/img/nuocMia.jpg" class="avatar avatar-xl me-3 border-radius-lg" alt="user1">
-                        </div>                     
-                      </td>
+                      </td>   
+                      <td class="align-middle text-center">
+                        <p class="text-xs font-weight-bold mb-0">$4</p>  
+                      </td>                   
                       <td class="align-middle text-center">
                         <p class="text-xs font-weight-bold mb-0">Food</p>  
                       </td>
@@ -203,7 +184,7 @@
                         <span class="text-secondary text-xs font-weight-bold">23/04/18</span>
                       </td>
                       <td class="align-middle">
-                        <a href="/admin/product-edit" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
+                        <a href="/admin/add-on-edit" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
                           Edit
                         </a>
 
@@ -244,23 +225,14 @@
                       </td>
                       <td style="min-width:10rem; max-width: 12rem">
                         <div class="align-middle text-start text-sm">     
-                            <h6 class="mb-0 text-sm text-wrap">Go Bucket® 2 Wicked Wings®</h6>
+                            <h6 class="mb-0 text-sm text-wrap">Extra pearl</h6>
                         </div>
-                      </td>
-                      <td style="min-width:10rem; max-width: 12rem">
-                        <div class="align-middle text-start text-sm">     
-                          <p class="text-xs font-weight-bold mb-1">Extra Vegetable</p>  
-                          <p class="text-xs font-weight-bold mb-1">Extra Chicken</p>  
-                          <p class="text-xs font-weight-bold mb-1">Extra Cheese</p>  
-                        </div>
-                      </td>
-                      <td>
-                        <div>
-                          <img src="../assets/img/banhCan.jpg" class="avatar avatar-xl me-3 border-radius-lg" alt="user1">
-                        </div>                     
-                      </td>
+                      </td>   
                       <td class="align-middle text-center">
-                        <p class="text-xs font-weight-bold mb-0">Food</p>  
+                        <p class="text-xs font-weight-bold mb-0">$2</p>  
+                      </td>                 
+                      <td class="align-middle text-center">
+                        <p class="text-xs font-weight-bold mb-0">Drink</p>  
                       </td>
                       <td class="align-middle text-center">
                         <p class="text-xs font-weight-bold mb-0">Eric</p>  
@@ -275,7 +247,7 @@
                         <span class="text-secondary text-xs font-weight-bold">23/04/18</span>
                       </td>
                       <td class="align-middle">
-                        <a href="/admin/product-edit" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
+                        <a href="/admin/add-on-edit" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
                           Edit
                         </a>
 

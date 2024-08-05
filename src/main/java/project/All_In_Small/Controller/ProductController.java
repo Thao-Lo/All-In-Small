@@ -19,4 +19,14 @@ public class ProductController {
 		return "admin/product-management";
 
 	}	
+	@GetMapping("/add-on-edit")
+	public String editAddOn(Model model) {	
+		return "admin/add-on-edit";
+
+	}	
+	@GetMapping("/add-on-management")
+	public String showAddOn(Model model) {	
+		return "admin/add-on-management";
+
+	}	
 }
